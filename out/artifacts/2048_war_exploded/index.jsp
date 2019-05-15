@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 2019/5/15
-  Time: 10:24
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -12,6 +5,8 @@
     <title>网页版2048</title>
     <link rel="stylesheet" type="text/css" href="CSS/Clear.css">
     <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <script src="JS/jquery-1.12.4.js"></script>
+    <script src="JS/index.js"></script>
 </head>
 
 <body>
