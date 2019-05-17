@@ -107,21 +107,30 @@ $(document).keydown(function (event) {
             if (moveUp()) {
                 //每次移动都需要生成一个数字
                 randomNum();
+<<<<<<< HEAD
                 setTimeout("isgameover()", 400);//400毫秒
+=======
+>>>>>>> 406cfaa005647acf316e531d5c30e98315a44978
             }
             break;
         case 39://right
             if (moveRight()) {
                 //每次移动都需要生成一个数字
                 randomNum();
+<<<<<<< HEAD
                 setTimeout("isgameover()", 400);//400毫秒
+=======
+>>>>>>> 406cfaa005647acf316e531d5c30e98315a44978
             }
             break;
         case 40://down
             if (moveDown()) {
                 //每次移动都需要生成一个数字
                 randomNum();
+<<<<<<< HEAD
                 setTimeout("isgameover()", 400);//400毫秒
+=======
+>>>>>>> 406cfaa005647acf316e531d5c30e98315a44978
             }
             break;
     }
@@ -413,6 +422,7 @@ function nospace(board) {
             if (board[i][j] === 0)
                 return false;
     return true;
+<<<<<<< HEAD
 }
 
 function isgameover() {
@@ -429,4 +439,6 @@ function gameover() {
 function nomove(board){
     return !(canMoveLeft(board) || canMoveRight(board) || canMoveUp(board) || canMoveDown(board));
 
+=======
+>>>>>>> 406cfaa005647acf316e531d5c30e98315a44978
 }
