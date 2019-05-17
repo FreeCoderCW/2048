@@ -1,6 +1,7 @@
 var board = new Array();//存储随机生生成的数字
 var added = new Array();//记录当前位置是否完成过合并
 var score = 0;
+var bool = false;
 
 $(document).ready(function (e) {
     //初始化棋盘格
@@ -429,13 +430,20 @@ function isgameover() {
 }
 
 function gameover() {
+<<<<<<< HEAD
+=======
+    //TODO
+>>>>>>> 5a0e7ce8652b69d97b432ccb82a0ae5774ee0b9f
     $("#gameover").css("display","block");
 }
 
 function nomove(board){
     return !(canMoveLeft(board) || canMoveRight(board) || canMoveUp(board) || canMoveDown(board));
+<<<<<<< HEAD
 }
 
 function getScore(){
     document.getElementById("score").innerHTML=score;
+=======
+>>>>>>> 5a0e7ce8652b69d97b432ccb82a0ae5774ee0b9f
 }

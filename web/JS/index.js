@@ -434,8 +434,11 @@ function gameover() {
 
 function nomove(board){
     return !(canMoveLeft(board) || canMoveRight(board) || canMoveUp(board) || canMoveDown(board));
+<<<<<<< HEAD
 }
 
 function getScore(){
     document.getElementById("score").innerHTML=score;
+=======
+>>>>>>> 5a0e7ce8652b69d97b432ccb82a0ae5774ee0b9f
 }
