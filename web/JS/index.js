@@ -9,6 +9,7 @@ $(document).ready(function (e) {
 //初始化
 function init() {
     score = 0;
+    $("#RankingOp").css("display", "none");
     $("#gameover").css("display", "none");
     for (var i = 0; i < 4; i++) {
         for (var j = 0; j < 4; j++) {
