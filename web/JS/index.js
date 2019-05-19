@@ -1,6 +1,7 @@
 var board = new Array();//存储随机生生成的数字
 var score = 0;
 var bool = false;
+var flag = 0;
 
 $(document).ready(function (e) {
     //初始化棋盘格
@@ -415,6 +416,13 @@ function isgameover() {
 
 function gameover() {
     $("#gameover").css("display", "block");
+    if (bool === true&&flag === 0){
+        var div = $("<div>太棒了！您的分数为:<input id='Score' type=\"text\" name=\"newScore\" class=\"input\" value=\""+score+"\"></div>");
+        $("#div").prepend(div);
+        bool = false;
+        flag = 1;
+        $("#formI").css("display","block");
+    }
 }
 
 //判断能否移动

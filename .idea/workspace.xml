@@ -7,9 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="356a1653-a0a9-4e95-8f82-9b1807cc1e7c" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/sh.exe.stackdump" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/update.jsp" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/web/CSS/index.css" afterPath="$PROJECT_DIR$/web/CSS/index.css" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/JS/index.js" afterPath="$PROJECT_DIR$/web/JS/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +25,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="72" column="16" lean-forward="true" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+            <state relative-caret-position="251">
+              <caret line="73" column="21" lean-forward="true" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
               <folding>
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -33,17 +34,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="update.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/update.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/JS/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2144">
-              <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="0">
+              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding>
                 <element signature="n#!!block;n#getPosTop#0" expanded="false" />
                 <element signature="n#!!block;n#getPosLeft#0" expanded="false" />
                 <element signature="n#!!block;n#updateThePage#0" expanded="false" />
                 <element signature="n#!!block;n#randomNum#0" expanded="false" />
-                <element signature="e#2468#3428#0" expanded="false" />
+                <element signature="e#2482#3442#0" expanded="false" />
                 <element signature="n#!!block;n#moveLeft#0" expanded="false" />
                 <element signature="n#!!block;n#moveRight#0" expanded="false" />
                 <element signature="n#!!block;n#moveUp#0" expanded="false" />
@@ -83,10 +94,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -122,12 +133,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/update.jsp" />
         <option value="$PROJECT_DIR$/web/JS.js" />
         <option value="$PROJECT_DIR$/web/index.html" />
-        <option value="$PROJECT_DIR$/web/JS/index.js" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/CSS/index.css" />
+        <option value="$PROJECT_DIR$/web/JS/index.js" />
+        <option value="$PROJECT_DIR$/web/update.jsp" />
       </list>
     </option>
   </component>
@@ -190,19 +201,13 @@
         <subPane>
           <expand>
             <path>
-              <item name="Test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="2048" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2048" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="2048" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2048" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="JS" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -505,12 +510,12 @@
       <workItem from="1557918484824" duration="6298000" />
       <workItem from="1558071226646" duration="11051000" />
       <workItem from="1558242748040" duration="2884000" />
-      <workItem from="1558267213284" duration="1096000" />
+      <workItem from="1558267213284" duration="1622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41480000" />
+    <option name="totallyTimeSpent" value="42006000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-10" y="0" width="700" height="744" extended-state="0" />
@@ -530,7 +535,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.064327486" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19005848" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -588,7 +593,7 @@
             <element signature="n#!!block;n#getPosLeft#0" expanded="false" />
             <element signature="n#!!block;n#updateThePage#0" expanded="false" />
             <element signature="n#!!block;n#randomNum#0" expanded="false" />
-            <element signature="e#2468#3428#0" expanded="false" />
+            <element signature="e#2482#3442#0" expanded="false" />
             <element signature="n#!!block;n#moveLeft#0" expanded="false" />
             <element signature="n#!!block;n#moveRight#0" expanded="false" />
             <element signature="n#!!block;n#moveUp#0" expanded="false" />
@@ -639,7 +644,7 @@
             <element signature="n#!!block;n#getPosLeft#0" expanded="false" />
             <element signature="n#!!block;n#updateThePage#0" expanded="false" />
             <element signature="n#!!block;n#randomNum#0" expanded="false" />
-            <element signature="e#2468#3428#0" expanded="false" />
+            <element signature="e#2482#3442#0" expanded="false" />
             <element signature="n#!!block;n#moveLeft#0" expanded="false" />
             <element signature="n#!!block;n#moveRight#0" expanded="false" />
             <element signature="n#!!block;n#moveUp#0" expanded="false" />
@@ -690,7 +695,7 @@
             <element signature="n#!!block;n#getPosLeft#0" expanded="false" />
             <element signature="n#!!block;n#updateThePage#0" expanded="false" />
             <element signature="n#!!block;n#randomNum#0" expanded="false" />
-            <element signature="e#2468#3428#0" expanded="false" />
+            <element signature="e#2482#3442#0" expanded="false" />
             <element signature="n#!!block;n#moveLeft#0" expanded="false" />
             <element signature="n#!!block;n#moveRight#0" expanded="false" />
             <element signature="n#!!block;n#moveUp#0" expanded="false" />
@@ -741,7 +746,7 @@
             <element signature="n#!!block;n#getPosLeft#0" expanded="false" />
             <element signature="n#!!block;n#updateThePage#0" expanded="false" />
             <element signature="n#!!block;n#randomNum#0" expanded="false" />
-            <element signature="e#2468#3428#0" expanded="false" />
+            <element signature="e#2482#3442#0" expanded="false" />
             <element signature="n#!!block;n#moveLeft#0" expanded="false" />
             <element signature="n#!!block;n#moveRight#0" expanded="false" />
             <element signature="n#!!block;n#moveUp#0" expanded="false" />
@@ -784,7 +789,7 @@
             <element signature="n#!!block;n#getPosLeft#0" expanded="false" />
             <element signature="n#!!block;n#updateThePage#0" expanded="false" />
             <element signature="n#!!block;n#randomNum#0" expanded="false" />
-            <element signature="e#2468#3428#0" expanded="false" />
+            <element signature="e#2482#3442#0" expanded="false" />
             <element signature="n#!!block;n#moveLeft#0" expanded="false" />
             <element signature="n#!!block;n#moveRight#0" expanded="false" />
             <element signature="n#!!block;n#moveUp#0" expanded="false" />
@@ -842,7 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/update.jsp" />
     <entry file="file://$PROJECT_DIR$/web/CSS/Clear.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -859,16 +863,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.html" />
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="72" column="16" lean-forward="true" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
-          <folding>
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/CSS/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -879,14 +873,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/JS/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2144">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
             <element signature="n#!!block;n#getPosTop#0" expanded="false" />
             <element signature="n#!!block;n#getPosLeft#0" expanded="false" />
             <element signature="n#!!block;n#updateThePage#0" expanded="false" />
             <element signature="n#!!block;n#randomNum#0" expanded="false" />
-            <element signature="e#2468#3428#0" expanded="false" />
+            <element signature="e#2482#3442#0" expanded="false" />
             <element signature="n#!!block;n#moveLeft#0" expanded="false" />
             <element signature="n#!!block;n#moveRight#0" expanded="false" />
             <element signature="n#!!block;n#moveUp#0" expanded="false" />
@@ -907,6 +901,24 @@
             <element signature="n#!!block;n#getScore#0" expanded="false" />
             <element signature="n#!!block;n#rankingList#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="73" column="21" lean-forward="true" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
+          <folding>
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
