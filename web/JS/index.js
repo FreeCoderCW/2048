@@ -1,5 +1,6 @@
 var board = new Array();//存储随机生生成的数字
 var score = 0;
+var bool = false;
 
 $(document).ready(function (e) {
     //初始化棋盘格
@@ -9,6 +10,7 @@ $(document).ready(function (e) {
 //初始化
 function init() {
     score = 0;
+    bool =false;
     $("#RankingOp").css("display", "none");
     $("#gameover").css("display", "none");
     for (var i = 0; i < 4; i++) {
