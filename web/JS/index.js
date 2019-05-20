@@ -11,9 +11,10 @@ $(document).ready(function (e) {
 //初始化
 function init() {
     score = 0;
-    bool =false;
+    bool = false;
+    flag = 0;
     $("#RankingOp").css("display", "none");
-    $("#gameover").css("display", "none");
+    $("#formI").css("display","none");
     for (var i = 0; i < 4; i++) {
         for (var j = 0; j < 4; j++) {
             var gridCell = $("#grid-cell-" + i + "-" + j);
@@ -410,13 +411,11 @@ function nospace(board) {
 function isgameover() {
     if (nospace(board) && nomove(board)) {
         bool = true;
-        gameover();
     }
-
+    gameover();
 }
 
 function gameover() {
-    // $("#gameover").css("display", "block");
     if (bool === true&&flag === 0){
         var div = $("<div>太棒了！您的分数为:<input id='Score' type=\"text\" name=\"newScore\" class=\"input\" value=\""+score+"\"></div>");
         $("#div").prepend(div);
