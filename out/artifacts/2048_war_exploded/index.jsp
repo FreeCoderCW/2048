@@ -22,6 +22,7 @@
         score:<span id="score">0</span>
     </p>
 </header>
+
 <div id="grid-container">
     <div class="grid-cell" id="grid-cell-0-0"></div>
     <div class="grid-cell" id="grid-cell-0-1"></div>
@@ -43,11 +44,13 @@
     <div class="grid-cell" id="grid-cell-3-2"></div>
     <div class="grid-cell" id="grid-cell-3-3"></div>
 </div>
+
 <div id="gameoverDiv">
     <div id="gameover">
         GAME OVER
     </div>
 </div>
+
 <div id="RankingOp">
     <div id="RankingListDiv">
         <div class="rankL">姓名</div>
@@ -74,6 +77,7 @@
         <div class="rankR"></div>
     </div>
 </div>
+
 <div id="formI">
     <form action="update.jsp" method="post">
         <div id="div">
@@ -84,7 +88,6 @@
 </div>
 
 <script>
-
     function rankingList() {
         <%
     List<String> lists = new LinkedList<>();
@@ -115,7 +118,27 @@
         }
 
     }
-</script>
-</body>
 
+    $(document).ready(function () {
+        <%
+    List<String> list1 = new LinkedList<>();
+    list1 = query(lists);
+    int j=1;
+
+
+    for (String string1: list1){
+        if(j<10){
+        String s[] = string1.split(" ");
+        int score1 = Integer.parseInt(s[1]);
+        %>
+        newScore = <%=score1%>;
+        <%
+            j++;
+        }
+    }
+    %>
+    })
+</script>
+
+</body>
 </html>

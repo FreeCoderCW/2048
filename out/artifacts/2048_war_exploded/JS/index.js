@@ -2,6 +2,7 @@ var board = new Array();//存储随机生生成的数字
 var score = 0;
 var bool = false;
 var flag = 0;
+var newScore = 0;
 
 $(document).ready(function (e) {
     //初始化棋盘格
@@ -11,8 +12,10 @@ $(document).ready(function (e) {
 //初始化
 function init() {
     score = 0;
-    bool =false;
+    bool = false;
+    flag = 0;
     $("#RankingOp").css("display", "none");
+    $("#formI").css("display", "none");
     $("#gameover").css("display", "none");
     for (var i = 0; i < 4; i++) {
         for (var j = 0; j < 4; j++) {
@@ -269,8 +272,8 @@ function moveDown() {
 function canMoveLeft(board) {
     for (var i = 0; i < 4; i++)
         for (var j = 0; j < 4; j++)
-            if( board[i][j] !==0 && j !== 0)
-                if( board[i][j-1] === 0 || board[i][j-1] === board[i][j])
+            if (board[i][j] !== 0 && j !== 0)
+                if (board[i][j - 1] === 0 || board[i][j - 1] === board[i][j])
                     return true;
     return false;
 }
@@ -410,19 +413,21 @@ function nospace(board) {
 function isgameover() {
     if (nospace(board) && nomove(board)) {
         bool = true;
-        gameover();
     }
-
+    gameover();
 }
 
 function gameover() {
-    // $("#gameover").css("display", "block");
-    if (bool === true&&flag === 0){
-        var div = $("<div>太棒了！您的分数为:<input id='Score' type=\"text\" name=\"newScore\" class=\"input\" value=\""+score+"\"></div>");
-        $("#div").prepend(div);
-        bool = false;
-        flag = 1;
-        $("#formI").css("display","block");
+    if (bool === true && flag === 0) {
+        if (score > newScore) {
+            var div = $("<div>太棒了！您的分数为:<input id='Score' type=\"text\" name=\"newScore\" class=\"input\" value=\"" + score + "\"></div>");
+            $("#div").prepend(div);
+            bool = false;
+            flag = 1;
+            $("#formI").css("display", "block");
+        }else{
+            $("#gameover").css("display", "block");
+        }
     }
 }
 
