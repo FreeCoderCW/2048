@@ -409,13 +409,14 @@ function nospace(board) {
 
 function isgameover() {
     if (nospace(board) && nomove(board)) {
+        bool = true;
         gameover();
     }
 
 }
 
 function gameover() {
-    $("#gameover").css("display", "block");
+    // $("#gameover").css("display", "block");
     if (bool === true&&flag === 0){
         var div = $("<div>太棒了！您的分数为:<input id='Score' type=\"text\" name=\"newScore\" class=\"input\" value=\""+score+"\"></div>");
         $("#div").prepend(div);
@@ -435,12 +436,3 @@ function getScore() {
     document.getElementById("score").innerHTML = score;
 }
 
-function rankingList() {
-    if (bool === true) {
-        $("#RankingOp").css("display", "none");
-        bool = false;
-    } else {
-        $("#RankingOp").css("display", "block");
-        bool = true;
-    }
-}

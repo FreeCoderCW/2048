@@ -1,13 +1,18 @@
 var board = new Array();//存储随机生生成的数字
 var score = 0;
+var bool = false;
+var flag = 0;
 
 $(document).ready(function (e) {
     //初始化棋盘格
     init();
 });
 
+//初始化
 function init() {
     score = 0;
+    bool =false;
+    $("#RankingOp").css("display", "none");
     $("#gameover").css("display", "none");
     for (var i = 0; i < 4; i++) {
         for (var j = 0; j < 4; j++) {
@@ -31,6 +36,7 @@ function init() {
     updateThePage();
 }
 
+//用于格子的定位
 function getPosTop(i) {
     return 20 + i * 120;
 }
@@ -39,7 +45,8 @@ function getPosLeft(j) {
     return 20 + j * 120;
 }
 
-function updateThePage() {//更新游戏界面。
+//更新游戏界面
+function updateThePage() {
     $(".number-grid").remove();
     for (var i = 0; i < 4; i++) {
         for (var j = 0; j < 4; j++) {
@@ -67,6 +74,7 @@ function updateThePage() {//更新游戏界面。
     }
 }
 
+//生成随机数
 function randomNum() {//生成随机的格子
     if (nospace(board))
         return false;
@@ -294,6 +302,7 @@ function canMoveDown(board) {
     return false;
 }
 
+//格子移动动画
 function moveAnimation(fromx, fromy, tox, toy) {//实现格子移动方法
 
     var numberGrid = $('#number-grid-' + fromx + '-' + fromy);
@@ -303,6 +312,7 @@ function moveAnimation(fromx, fromy, tox, toy) {//实现格子移动方法
     }, 200);
 }
 
+//数字合并动画
 function numberAnimation(i, j, randNumber) {//实现随机数字的样式变动
 
     var numberGrid = $('#number-grid-' + i + '-' + j);
@@ -388,6 +398,7 @@ function getNumberColor(number) {
     return "white";
 }
 
+//用于生成数字时判断时候还有空间
 function nospace(board) {
     for (var i = 0; i < 4; i++)
         for (var j = 0; j < 4; j++)
@@ -398,19 +409,30 @@ function nospace(board) {
 
 function isgameover() {
     if (nospace(board) && nomove(board)) {
+        bool = true;
         gameover();
     }
 
 }
 
 function gameover() {
-    $("#gameover").css("display", "block");
+    // $("#gameover").css("display", "block");
+    if (bool === true&&flag === 0){
+        var div = $("<div>太棒了！您的分数为:<input id='Score' type=\"text\" name=\"newScore\" class=\"input\" value=\""+score+"\"></div>");
+        $("#div").prepend(div);
+        bool = false;
+        flag = 1;
+        $("#formI").css("display","block");
+    }
 }
 
+//判断能否移动
 function nomove(board) {
     return !(canMoveLeft(board) || canMoveRight(board) || canMoveUp(board) || canMoveDown(board));
 }
 
+//获取分数
 function getScore() {
     document.getElementById("score").innerHTML = score;
 }
+
