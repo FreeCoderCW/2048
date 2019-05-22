@@ -2,6 +2,7 @@
 <%@ page import="java.util.LinkedList" %>
 <%@ page import="util.DBCPTest" %>
 <%@ page import="static util.DBCPTest.*" %>
+<%--<%@ page import="util.JDBC_Util" %>--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -91,7 +92,7 @@
     function rankingList() {
         <%
     List<String> lists = new LinkedList<>();
-    lists = query(lists);
+    lists = DBCPTest.query(lists);
     int i=1;
 
 
